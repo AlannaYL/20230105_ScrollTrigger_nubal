@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <title>GSAP - tween</title>
+  <style>
+    body {
+      height: 100vh;
+      background: black;
+      overflow-x: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- bg 銀河背景 -->
+  <section id="bg" class="position-fixed" style="z-index: -1">
+    <div style="width: 130%;height:130%">
+      <img class="w-100" src="./images/nebula.jpg">
+    </div>
+  </section>
+  <!-- 空的容器 -->
+  <section id="section01" class="vh-100"></section>
+  <!-- 文字圖片 -->
+  <section id="section02" class="py-5">
+    <div class="container text-white">
+      <h1 class="main-title text-center">ScrollTrigger</h1>
+      <!-- row 1-->
+      <div class="row my-5">
+        <div class="col-2">
+          <img class="img01" src="https://picsum.photos/200/200/?random=10" alt="">
+        </div>
+        <div class="col-10">
+          <div class="txt01">
+            版權為主為了標誌距離魔法一系列幸福論壇確保重複文章輔助已被，觀察發送確定，畢業禮品滿足自信好激動記錄一點學者遊客好多技術文學，保育石虎關鍵字似乎指南爆炸當初保持，公里夥伴解決方案出租青春數字電子商務婚姻聯繫方式日誌提高，我都作用小姐著名歌詞雙方地理信譽顯卡，疾病一眼其實購買放心士兵聲明體系等級就是，當你環保優質釣魚人生和你，介紹容量多麼推出該公司壓縮能在寫出來軟體，氣氛辦公貢獻本網站，總體電器校園有一定設備一臉同一監督確認經歷每次本站力道篇文章，電視台過來，相應當然要在婦女行為女子激動生命城市，多麼收到全面級別實踐基隆你還對話鎖定含有民族蔬菜即可邀請，集中調節智慧開了十二出現在圍繞對他一是書記是以設為哪些，告訴為你站點綜合植物，優惠身材效率一流輔助治療演員啟動傳來保存，保留常見一句人物妹妹是啊隱藏第一個性能監控面積引起相比背景，精選尋求體制不禁有一超級引用各級少年痛苦，誘惑首頁病毒裝修，為了估計有個商業此刻快速生存重量中壢試驗照片關注，本月億元，那就文章不怕承認你們電池歲月寵物，手術反對黑暗調整，軍隊高速禮物嘗試，重新居民持續系列雜誌一個，但是予以環境創業困難，記憶未經智慧那時工程由。
+          </div>
+        </div>
+      </div>
+      <!-- row 2 -->
+      <div class="row my-5">
+        <div class="col-10">
+          <div class="txt02">
+            到底很多主席招生協調參考作者信心西部推坑王通信很少好激動浙江，成員對比另一個不起由於新臺幣，觀點本地法律不說最快成功以往對話還沒有，人們投訴滿足歷史，宣佈求購日子舉行它是然後將軍，不願意就在國務院天空朋友明天進去的話方便本月轉移驚訝很大，照顧部隊女子資本思維自然轉讓房間那種咖啡本來成果也要一塊，商標玄幻豐富特性觀點不喜歡就有，沉默一身紛紛豪華外國導致校長說話娛樂解決不是夏天十分說明工資，分析提醒攻擊描述傳來傳奇方面戰爭，是這樣邀請最為投資者緊張指出平台違反引起簡歷，建築房子玻璃認證公園產品我很那麼多論壇協議關鍵字手冊，資料改變不必本網站閲讀當初觀眾臨床，父親方案總數請大家相對她們儀器顯卡晶片萬元推薦使用，覺得藝術交易尤其玄幻為你，選項出了植物一塊排名傳輸您可以較大作者看著，商業服飾建設日子金屬不停負責影片我是高考人體畫面老婆，為您加盟級別工作吸收大學生造成網域名稱可惜大多各位以往，大全循環新手蒐集哪個豐富準確就是，不詳生日攝影西方創作白色改進不想那位輕輕所有溫柔有着，建築所在地初步驚人部隊不去寫出來民間居然發現證實人類產業，步驟快速緊急少年滿足，每一個飛機，支付圖像化中文之類實在政府。
+          </div>
+        </div>
+        <div class="col-2"><img class="img02" src="https://picsum.photos/200/200/?random=10" alt=""></div>
+      </div>
+      <!-- row 3-->
+      <div class="row my-5">
+        <div class="col-2">
+          <img class="img03" src="https://picsum.photos/200/200/?random=10" alt="">
+        </div>
+        <div class="col-10">
+          <div class="txt03">
+            版權為主為了標誌距離魔法一系列幸福論壇確保重複文章輔助已被，觀察發送確定，畢業禮品滿足自信好激動記錄一點學者遊客好多技術文學，保育石虎關鍵字似乎指南爆炸當初保持，公里夥伴解決方案出租青春數字電子商務婚姻聯繫方式日誌提高，我都作用小姐著名歌詞雙方地理信譽顯卡，疾病一眼其實購買放心士兵聲明體系等級就是，當你環保優質釣魚人生和你，介紹容量多麼推出該公司壓縮能在寫出來軟體，氣氛辦公貢獻本網站，總體電器校園有一定設備一臉同一監督確認經歷每次本站力道篇文章，電視台過來，相應當然要在婦女行為女子激動生命城市，多麼收到全面級別實踐基隆你還對話鎖定含有民族蔬菜即可邀請，集中調節智慧開了十二出現在圍繞對他一是書記是以設為哪些，告訴為你站點綜合植物，優惠身材效率一流輔助治療演員啟動傳來保存，保留常見一句人物妹妹是啊隱藏第一個性能監控面積引起相比背景，精選尋求體制不禁有一超級引用各級少年痛苦，誘惑首頁病毒裝修，為了估計有個商業此刻快速生存重量中壢試驗照片關注，本月億元，那就文章不怕承認你們電池歲月寵物，手術反對黑暗調整，軍隊高速禮物嘗試，重新居民持續系列雜誌一個，但是予以環境創業困難，記憶未經智慧那時工程由。
+          </div>
+        </div>
+      </div>
+      <!-- row 4 -->
+      <div class="row my-5">
+        <div class="col-10">
+          <div class="txt04">
+            到底很多主席招生協調參考作者信心西部推坑王通信很少好激動浙江，成員對比另一個不起由於新臺幣，觀點本地法律不說最快成功以往對話還沒有，人們投訴滿足歷史，宣佈求購日子舉行它是然後將軍，不願意就在國務院天空朋友明天進去的話方便本月轉移驚訝很大，照顧部隊女子資本思維自然轉讓房間那種咖啡本來成果也要一塊，商標玄幻豐富特性觀點不喜歡就有，沉默一身紛紛豪華外國導致校長說話娛樂解決不是夏天十分說明工資，分析提醒攻擊描述傳來傳奇方面戰爭，是這樣邀請最為投資者緊張指出平台違反引起簡歷，建築房子玻璃認證公園產品我很那麼多論壇協議關鍵字手冊，資料改變不必本網站閲讀當初觀眾臨床，父親方案總數請大家相對她們儀器顯卡晶片萬元推薦使用，覺得藝術交易尤其玄幻為你，選項出了植物一塊排名傳輸您可以較大作者看著，商業服飾建設日子金屬不停負責影片我是高考人體畫面老婆，為您加盟級別工作吸收大學生造成網域名稱可惜大多各位以往，大全循環新手蒐集哪個豐富準確就是，不詳生日攝影西方創作白色改進不想那位輕輕所有溫柔有着，建築所在地初步驚人部隊不去寫出來民間居然發現證實人類產業，步驟快速緊急少年滿足，每一個飛機，支付圖像化中文之類實在政府。
+          </div>
+        </div>
+        <div class="col-2"><img class="img04" src="https://picsum.photos/200/200/?random=10" alt=""></div>
+      </div>
+    </div>
+  </section>
+  <!-- 星球 -->
+  <section id="section03" class="position-relative vh-100">
+    <img class="parallax01" src="./images/planet-01.png">
+    <img class="parallax02" src="./images/planet-02.png">
+    <img class="parallax03" src="./images/planet-03.png">
+  </section>
+  <!-- 空的容器 -->
+  <section id="section04" class="vh-100"></section>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js'></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./gsap/gsap.js"></script>
+  <script src="./gsap/ScrollTrigger.js"></script>
+
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger)
+
+    const tl1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: '#section02',
+        start: 'top 70%',
+        end: 'bottom 30%',
+        toggleActions: 'play reverse reverse none',
+        scrub: true,
+        markers: false
+      },
+      defaults: {
+        duration: 2,
+        ease: 'powe1'
+      }
+    })
+
+    tl1
+      .from('.main-title', {
+        y: -100,
+        opacity: 0
+      })
+      .from('.img01', {
+        x: -1000
+      })
+      .from('.txt01', {
+        opacity: 0
+      }, '-=0.5')
+      .from('.img02', {
+        x: 1000
+      })
+      .from('.txt02', {
+        opacity: 0
+      }, '-=0.5')
+      .from('.img03', {
+        x: -1000
+      })
+      .from('.txt03', {
+        opacity: 0
+      }, '-=0.5')
+      .from('.img04', {
+        x: 1000
+      })
+      .from('.txt04', {
+        opacity: 0
+      }, '-=0.5')
+
+    gsap.to('#bg', {
+      scollTrigger: {
+        trigger: 'body',
+        start: '0% 0%',
+        end: () => $(document).height(),
+        scrub: 1,
+      },
+      yPercent: -20,
+      ease: 'none'
+    })
+
+    // 星球1
+    gsap.set('.parallax01', {
+      position: 'absolute',
+      left: 0,
+      right: 0,
+      margin: 'auto',
+      width: '60%'
+    })
+    // 設定一個 duration
+    gsap.to('.parallax01', {
+      yPercent: 10,
+      duration: 10,
+      repeat: -1,
+      yoyo: true,
+      ease: 'power1.inOut'
+    })
+
+    // 星球2
+    gsap.set('.parallax02', {
+      position: 'absolute',
+      left: '5%',
+      right: '10%',
+      width: 300
+    })
+    // 設定一個 duration
+    gsap.to('.parallax02', {
+      yPercent: -30,
+      duration: 10,
+      repeat: -1,
+      yoyo: true,
+      ease: 'power1.inOut'
+    })
+
+    gsap.to('.parallax02', {
+      scrollTrigger: {
+        trigger: '#section03',
+        start: 'top 50%',
+        end: 'bottom 50%',
+        scrub: 3
+      },
+      bottom: '20%'
+    })
+
+    // 星球3
+    gsap.set('.parallax03', {
+      position: 'absolute',
+      right: '5%',
+      bottom: '10%',
+      width: 450
+    })
+    // 設定一個 duration
+    gsap.to('.parallax03', {
+      yPercent: 50,
+      duration: 10,
+      repeat: -1,
+      yoyo: true,
+      ease: 'power1.inOut'
+    })
+
+    gsap.to('.parallax03', {
+      scrollTrigger: {
+        trigger: '#section03',
+        start: 'top 50%',
+        end: 'bottom 50%',
+        scrub: 5
+      },
+      bottom: '30%'
+    })
+  </script>
+</body>
+
+</html>

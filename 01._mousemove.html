@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.css">
+  <title>GSAP - tween</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .wrap {
+      width: 800px;
+      height: 400px;
+    }
+
+    .wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <img src="https://picsum.photos/800/400/?random=10">
+  </div>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js'></script>
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./gsap/gsap.js"></script>
+  <script src="./gsap/ScrollTrigger.js"></script>
+
+  <script>
+    gsap.registerPlugin(ScrollTrigger)
+    window.addEventListener('mousemove', (mouse) => {
+      // console.log(mouse.pageX, mouse.pageY)
+      console.log(mouse.pageX - window.innerWidth / 2),
+        gsap.to('.wrap', {
+          // x: mouse.pageX - window.innerWidth / 2,
+          boxShadow: `${-(mouse.pageX - window.innerWidth / 2) / 60}px ${-(mouse.pageY - window.innerWidth / 2) / 40}px 30px rgba(0, 0, 0, 0.5)`,
+          rotationX: -(mouse.pageX - window.innerWidth / 2) / 120,
+          rotationY: -(mouse.pageY - window.innerWidth / 2) / 120,
+          rotationZ: -(mouse.pageX - window.innerWidth / 2) / 120,
+          skewX: -(mouse.pageX - window.innerWidth / 2) / 600,
+          skewY: -(mouse.pageY - window.innerWidth / 2) / 600,
+          ease: 'back(5)',
+          duration: 3
+        })
+    })
+  </script>
+</body>
+
+</html>
